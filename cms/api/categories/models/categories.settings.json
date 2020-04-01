@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 2
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}
